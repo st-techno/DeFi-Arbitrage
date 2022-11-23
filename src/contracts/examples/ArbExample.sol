@@ -174,8 +174,6 @@ contract DyDxPool is Structs {
     function operate(Info[] memory, ActionArgs[] memory) public;
 }
 
-pragma solidity ^0.5.0;
-
 
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP. Does not include
@@ -186,8 +184,6 @@ interface IERC20 {
 
     function approve(address spender, uint256 amount) external returns (bool);
 }
-
-pragma solidity ^0.5.0;
 
 
 contract DyDxFlashLoan is Structs {
@@ -272,7 +268,6 @@ contract DyDxFlashLoan is Structs {
     }
 }
 
-pragma solidity ^0.5.0;
 
 contract ArbExample is DyDxFlashLoan, Trader {
     uint256 public loan;
